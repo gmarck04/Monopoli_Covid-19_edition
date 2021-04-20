@@ -1,0 +1,203 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.2f1 (8fd9074bf66c) revision 9427207'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.928; Version 2009; 64bit' Language: 'it' Physical Memory: 7960 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/gmarc/OneDrive/Documenti/GitHub/Monopoli_Covid-19_edition/Monopoli_Covid-19_edition
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58301
+Successfully changed project path to: C:/Users/gmarc/OneDrive/Documenti/GitHub/Monopoli_Covid-19_edition/Monopoli_Covid-19_edition
+C:/Users/gmarc/OneDrive/Documenti/GitHub/Monopoli_Covid-19_edition/Monopoli_Covid-19_edition
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 34.97 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.2f1 (8fd9074bf66c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/gmarc/OneDrive/Documenti/GitHub/Monopoli_Covid-19_edition/Monopoli_Covid-19_edition/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics (ID=0x8a56)
+    Vendor:   
+    VRAM:     3980 MB
+    Driver:   27.20.100.9316
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56000
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001751 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 38.89 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.675 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000838 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 37.64 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.879 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1808 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.5 MB.
+System memory in use after: 85.5 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2251.
+Total: 2.130600 ms (FindLiveObjects: 0.172600 ms CreateObjectMapping: 0.082200 ms MarkObjects: 1.671700 ms  DeleteObjects: 0.202500 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Backgrounds/Logo.png
+  artifactKey: Guid(89e196ec4da347e4a96892d062fea8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Backgrounds/Logo.png using Guid(89e196ec4da347e4a96892d062fea8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '051900d3f5b5e6255d59c5d711bf5828') in 0.099514 seconds
+  Import took 0.103038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 153.172194 seconds.
+  path: Assets/Backgrounds/Logo.png
+  artifactKey: Guid(89e196ec4da347e4a96892d062fea8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Backgrounds/Logo.png using Guid(89e196ec4da347e4a96892d062fea8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '208517977c9d3fdf0638321808f884b4') in 0.026184 seconds
+  Import took 0.030721 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.998375 seconds.
+  path: Assets/Backgrounds/Logo.png
+  artifactKey: Guid(89e196ec4da347e4a96892d062fea8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Backgrounds/Logo.png using Guid(89e196ec4da347e4a96892d062fea8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'babf257a2eb831ac8a93d10eda1aa926') in 0.021546 seconds
+  Import took 0.027071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002734 seconds.
+  path: Assets/Backgrounds/Logo.png
+  artifactKey: Guid(89e196ec4da347e4a96892d062fea8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Backgrounds/Logo.png using Guid(89e196ec4da347e4a96892d062fea8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'babf257a2eb831ac8a93d10eda1aa926') in 0.022103 seconds
+  Import took 0.026396 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.119195 seconds.
+  path: Assets/Scenes/Menù 3_1.unity
+  artifactKey: Guid(a37397e40c5fed445bc5ae084353887f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menù 3_1.unity using Guid(a37397e40c5fed445bc5ae084353887f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7d28204ea00ac20ce988a3d98950aab') in 0.012015 seconds
+  Import took 0.061809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.942054 seconds.
+  path: Assets/Scenes/Menù 4.unity
+  artifactKey: Guid(9c53a8784b0143f4a910ef8a80d8dfc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menù 4.unity using Guid(9c53a8784b0143f4a910ef8a80d8dfc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57a23334d530ea7c70418e17b6fd5d97') in 0.011316 seconds
+  Import took 0.015631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.513994 seconds.
+  path: Assets/Scenes/Menù 2.unity
+  artifactKey: Guid(a181b508749e17b42861aa5f980e1eb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menù 2.unity using Guid(a181b508749e17b42861aa5f980e1eb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '602c91c224f16747b1c1d591945dc901') in 0.011217 seconds
+  Import took 0.014813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.616804 seconds.
+  path: Assets/Scenes/Menù 1.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menù 1.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5baa7a1c01d613d2081fcb0b45c6bff') in 0.010993 seconds
+  Import took 0.015064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 123.052335 seconds.
+  path: Assets/Players
+  artifactKey: Guid(4cde2e4be3ccf2e4ca66b3dff43e9202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Players using Guid(4cde2e4be3ccf2e4ca66b3dff43e9202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd0b45f50602b4f84926109a1ef40ae4') in 0.011621 seconds
+  Import took 0.016847 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001245 seconds.
+  path: Assets/Players
+  artifactKey: Guid(4cde2e4be3ccf2e4ca66b3dff43e9202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Players using Guid(4cde2e4be3ccf2e4ca66b3dff43e9202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd0b45f50602b4f84926109a1ef40ae4') in 0.009213 seconds
+  Import took 0.014339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.652946 seconds.
+  path: Assets/Players/kisspng-rank-insignia-of-the-guardia-di-finanza-finanziere-personale-amministrativo-tecnico-e-ausiliario-5b5352c509aef4.0299962315321873330397.png
+  artifactKey: Guid(bfbd5a86adc8bf9478f1429a6c508bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Players/kisspng-rank-insignia-of-the-guardia-di-finanza-finanziere-personale-amministrativo-tecnico-e-ausiliario-5b5352c509aef4.0299962315321873330397.png using Guid(bfbd5a86adc8bf9478f1429a6c508bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9acf37112060ab13b9aab820c4a39a5e') in 0.036096 seconds
+  Import took 0.039756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.294145 seconds.
+  path: Assets/Players/8000036023242-1904300649-1_grande.png
+  artifactKey: Guid(a48fd21bfa24fd24182b3b2a797e041b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Players/8000036023242-1904300649-1_grande.png using Guid(a48fd21bfa24fd24182b3b2a797e041b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acb6260fbbbec574c3f22cd9b947e849') in 0.027224 seconds
+  Import took 0.031245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002803 seconds.
+  path: Assets/Players/8000036023242-1904300649-1_grande.png
+  artifactKey: Guid(a48fd21bfa24fd24182b3b2a797e041b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Players/8000036023242-1904300649-1_grande.png using Guid(a48fd21bfa24fd24182b3b2a797e041b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acb6260fbbbec574c3f22cd9b947e849') in 0.018083 seconds
+  Import took 0.026610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.392290 seconds.
+  path: Assets/Players/pngtree-concept-coronavirus-vaccine-covid-19-bottle-and-syringe-3d-illustration-png-image_2719760.png
+  artifactKey: Guid(465b4505650f8cb49a7c03292c2f11e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Players/pngtree-concept-coronavirus-vaccine-covid-19-bottle-and-syringe-3d-illustration-png-image_2719760.png using Guid(465b4505650f8cb49a7c03292c2f11e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cd5154bdc418f00a9efcdfaf45070d6') in 0.029408 seconds
+  Import took 0.032975 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006247 seconds.
+  path: Assets/Players/pngtree-concept-coronavirus-vaccine-covid-19-bottle-and-syringe-3d-illustration-png-image_2719760.png
+  artifactKey: Guid(465b4505650f8cb49a7c03292c2f11e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Players/pngtree-concept-coronavirus-vaccine-covid-19-bottle-and-syringe-3d-illustration-png-image_2719760.png using Guid(465b4505650f8cb49a7c03292c2f11e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cd5154bdc418f00a9efcdfaf45070d6') in 0.019264 seconds
+  Import took 0.029454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.163488 seconds.
+  path: Assets/Players/medical-mask-16.png
+  artifactKey: Guid(2f7f6ea17d4b6c94192fa4c7ede1bb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Players/medical-mask-16.png using Guid(2f7f6ea17d4b6c94192fa4c7ede1bb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67fa6de28389e8096c68ef6ab15aaa6d') in 0.034553 seconds
+  Import took 0.038763 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
