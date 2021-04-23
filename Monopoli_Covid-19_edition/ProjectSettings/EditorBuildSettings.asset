@@ -12,9 +12,24 @@ EditorBuildSettings:
     path: "Assets/Scenes/Men\xF9 2.unity"
     guid: a181b508749e17b42861aa5f980e1eb8
   - enabled: 1
+    path: "Assets/Scenes/Men\xF9 3_1.unity"
+    guid: a37397e40c5fed445bc5ae084353887f
+  - enabled: 1
+    path: "Assets/Scenes/Men\xF9 4.unity"
+    guid: 9c53a8784b0143f4a910ef8a80d8dfc7
+  - enabled: 1
+    path: Assets/Scenes/Gioco.unity
+    guid: 21e7b0b359551914eb322f126ce43597
+  - enabled: 1
     path: "Assets/Scenes/Men\xF9 generale.unity"
     guid: 631770c8879c55948b2eff0187faa0a7
   - enabled: 1
     path: Assets/Scenes/Gioco_Exit.unity
     guid: cf5624cff6565ec4e8a15f6aa9f55cbf
+  - enabled: 1
+    path: Assets/Scenes/Guida.unity
+    guid: f35fb3868ca63224791dadcd82eaaa98
+  - enabled: 1
+    path: Assets/Scenes/Scelta Personaggi.unity
+    guid: 230a12e84823b164b820553599fcc02d
   m_configObjects: {}
