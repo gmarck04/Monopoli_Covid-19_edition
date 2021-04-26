@@ -54,6 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Code\Code_Menù.cs" />
+    <Compile Include="Assets\Code\Change_Input.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
