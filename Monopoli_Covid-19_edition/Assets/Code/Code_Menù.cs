@@ -30,6 +30,11 @@ public class Code_Menù : MonoBehaviour
         SceneManager.LoadScene(6);
         Quit++;
     }
+    public void QuitGame_Gioco()
+    {
+        SceneManager.LoadScene(6);
+        Quit=+5;
+    }
     public void CPU_vs_P1()
     {
         Giocatori++;
