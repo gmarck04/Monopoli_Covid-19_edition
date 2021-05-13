@@ -53,11 +53,12 @@
     <UnityVersion>2020.3.2f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Code\Utente.cs" />
     <Compile Include="Assets\Code\Code_Menù.cs" />
     <Compile Include="Assets\Code\Change_Input.cs" />
-    <Compile Include="Assets\Code\Suonds.cs" />
-    <Compile Include="Assets\Code\audio.cs" />
     <Compile Include="Assets\Code\AudioSettings.cs" />
+    <Compile Include="Assets\Code\audio.cs" />
+    <Compile Include="Assets\Code\Suonds.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

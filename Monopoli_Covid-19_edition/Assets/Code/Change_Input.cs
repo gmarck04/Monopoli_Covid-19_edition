@@ -8,19 +8,11 @@ using UnityEngine.EventSystems;
 
 public class Change_Input : MonoBehaviour
 {
-    
-
-
-
-
-    EventSystem system;
-    public Selectable firstinput;
-    public Button submitbutton;
+    EventSystem system;   
 
     void Start()
     {
         system = EventSystem.current;
-        firstinput.Select();
     }
 
     // Update is called once per frame
@@ -41,11 +33,6 @@ public class Change_Input : MonoBehaviour
             {
                 next.Select();
             }
-        }
-        else if(Input.GetKeyDown(KeyCode.Return))
-        {
-            submitbutton.onClick.Invoke();
-            Debug.Log("Buttun pressed!");
         }
     }
 }

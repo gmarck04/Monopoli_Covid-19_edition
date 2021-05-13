@@ -94,6 +94,7 @@ public class Code_Menù : MonoBehaviour
     public void SÌ()
     {
         Application.Quit();
+        Debug.Log("");
     }
     public void NO()
     {
