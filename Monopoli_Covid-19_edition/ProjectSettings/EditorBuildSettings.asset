@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: "Assets/Scenes/Men\xF9 4.unity"
     guid: 9c53a8784b0143f4a910ef8a80d8dfc7
   - enabled: 1
+    path: Assets/Scenes/Login.unity
+    guid: bb5b40396303db24f925a50f9c8a5269
+  - enabled: 1
     path: Assets/Scenes/Gioco.unity
     guid: 21e7b0b359551914eb322f126ce43597
   - enabled: 1

@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
 using System.Linq;
 using System.IO;
 using System;
@@ -13,6 +10,7 @@ public class Utente : MonoBehaviour
 {
     public InputField User;
     public InputField Password;
+    public GameObject Messaggio;
 
     // Start is called before the first frame update
     void Start()
@@ -77,7 +75,8 @@ public class Utente : MonoBehaviour
                 if (User_Lettura[i] == User.text && Password_Lettura[i] == Encrypt(Password.text))
                 {
                     Debug.Log("Ok sei entrato");
-                    SceneManager.LoadScene(4);
+                    SceneManager.LoadScene(5);
+                    Messaggio.SetActive(false);
                 }
                 else if (User_Lettura[i] != User.text || Password_Lettura[i] != Password.text)
                 {
@@ -88,6 +87,8 @@ public class Utente : MonoBehaviour
             if (Errori == elenco_giocatori.Length)
             {
                 Debug.Log("Utente e pass sono sbagliati");
+                Messaggio.SetActive(true);
+                Password.text = "";
             }
         }
         else
@@ -118,6 +119,15 @@ public class Utente : MonoBehaviour
             Debug.Log("Creato il file delle password");
         }
     }
+
+    /*public void pulisci()
+    {
+        if (Messaggio.active == true)
+        {
+            User.text = "";
+            Messaggio.SetActive(false);
+        }
+    }*/
 
     public void Reset_Password()
     {
