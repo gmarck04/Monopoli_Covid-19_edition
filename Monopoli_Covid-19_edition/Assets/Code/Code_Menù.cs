@@ -6,7 +6,7 @@ public class Code_Menù : MonoBehaviour
     private static int Quit = 0;
     private static int Back_int = 0;
     private static int Guida_int = 0;
-    private static int Giocatori = 0;
+    private static int Giocatori = -1;
     private static int Login = 0;
     public void PlayGame()
     {
@@ -40,7 +40,7 @@ public class Code_Menù : MonoBehaviour
         Login++;
         SceneManager.LoadScene(3);
         Back_int=+2;
-        Giocatori=+2;
+        Giocatori++;
     }
     public void Multiplayers()
     {        

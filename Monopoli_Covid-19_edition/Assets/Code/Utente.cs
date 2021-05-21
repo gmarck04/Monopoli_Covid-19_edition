@@ -19,7 +19,7 @@ public class Utente : MonoBehaviour
 
         if (!File.Exists(Login_file))
         {
-            Debug.Log("File non trovato, ora lo creo");
+            Debug.Log("File delle password non trovato, ora lo creo");
             FileStream sw = File.Create(Login_file);
             sw.Close();
             Debug.Log("Creato il file delle password");
