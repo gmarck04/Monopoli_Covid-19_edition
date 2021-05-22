@@ -19,7 +19,6 @@ public class fullScreen : MonoBehaviour
     void Update()
     {
         screenString = screen.value.ToString();
-        //Debug.Log(screenString);
         choice();
     }
 
@@ -27,15 +26,15 @@ public class fullScreen : MonoBehaviour
     {
         switch (screenString)
         {
-            case "SCHERMO INTERO":
+            case "0":
                 {
-                    Screen.fullScreen = true;
+                    Screen.fullScreen = Screen.fullScreen;
                 }
                 break;
 
-            case "SCHERMO RIDOTTO":
+            case "1":
                 {
-                    Screen.fullScreen = false;
+                    Screen.fullScreen = !Screen.fullScreen;
                 }
                 break;
         }

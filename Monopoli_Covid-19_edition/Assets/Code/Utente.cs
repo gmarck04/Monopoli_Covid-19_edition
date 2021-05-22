@@ -106,7 +106,7 @@ public class Utente : MonoBehaviour
 
         if (File.Exists(Login_file))
         {
-            StreamWriter sw = new StreamWriter(Login_file, true);
+            StreamWriter sw = new StreamWriter(Login_file, false);
             sw.WriteLine(User.text + "," + Encrypt(Password.text));
             sw.Close();
             //SceneManager.LoadScene(4);

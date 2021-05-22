@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.IO;
 
 public class Code_Menù : MonoBehaviour
 {
@@ -8,6 +9,12 @@ public class Code_Menù : MonoBehaviour
     private static int Guida_int = 0;
     private static int Giocatori = -1;
     private static int Login = 0;
+
+    private void Start()
+    {
+        Screen.fullScreen = Screen.fullScreen;
+    }
+
     public void PlayGame()
     {
         SceneManager.LoadScene(1);
@@ -39,7 +46,7 @@ public class Code_Menù : MonoBehaviour
         Giocatori++;
         Login++;
         SceneManager.LoadScene(3);
-        Back_int=+2;
+        Back_int=+3;
         Giocatori++;
     }
     public void Multiplayers()
@@ -87,26 +94,39 @@ public class Code_Menù : MonoBehaviour
     {
         Giocatori--;
         Giocatori_if();
+        Back_int++;
     }
     public void Siringa()
     {
         Giocatori--;
         Giocatori_if();
+        Back_int++;
     }
     public void Vaccino()
     {
         Giocatori--;
         Giocatori_if();
+        Back_int++;
     }
     public void Amuchina()
     {
         Giocatori--;
         Giocatori_if();
+        Back_int++;
     }
     public void SÌ()
     {
         Application.Quit();
         Debug.Log("OK sei uscito dal gioco");
+
+        string Time_file = Application.persistentDataPath + "/Time.txt";
+        string Money_file = Application.persistentDataPath + "/Money.txt";
+
+        if (File.Exists(Money_file))
+            File.Delete(Money_file);
+
+        if (File.Exists(Time_file))
+            File.Delete(Time_file);
     }
     public void NO()
     {
@@ -117,5 +137,10 @@ public class Code_Menù : MonoBehaviour
     {
         Back_int--;
         SceneManager.LoadScene(Back_int);        
+    }
+    public void Back_cpu()
+    {
+        Back_int = Back_int - 2;
+        SceneManager.LoadScene(Back_int);
     }
 }
