@@ -109,7 +109,7 @@ public class Utente : MonoBehaviour
             StreamWriter sw = new StreamWriter(Login_file, false);
             sw.WriteLine(User.text + "," + Encrypt(Password.text));
             sw.Close();
-            //SceneManager.LoadScene(4);
+            SceneManager.LoadScene(5);
         }
         else
         {
