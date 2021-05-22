@@ -5,8 +5,8 @@ public class Follow_the_path : MonoBehaviour
     public Transform[] waypoints;
     public GameObject dice;
 
-    [SerializeField]
-    private float moveSpeed = 1f;
+    //[SerializeField]
+    //private float moveSpeed = 1f;
 
     [HideInInspector]
     public int waypointIndex = 0;

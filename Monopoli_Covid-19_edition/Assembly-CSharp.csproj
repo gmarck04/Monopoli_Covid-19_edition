@@ -64,6 +64,8 @@
     <Compile Include="Assets\Code\audio.cs" />
     <Compile Include="Assets\Code\Pedine_scelta.cs" />
     <Compile Include="Assets\Code\Suonds.cs" />
+    <Compile Include="Assets\Game\Valori.cs" />
+    <Compile Include="Assets\Code\fullScreen.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
