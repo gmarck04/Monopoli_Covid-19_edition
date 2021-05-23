@@ -84,6 +84,7 @@ public class Code_Menù : MonoBehaviour
     }
     public void Login_register()
     {
+        Back_int++;
         Login--;
         if (Login == 0)
         {

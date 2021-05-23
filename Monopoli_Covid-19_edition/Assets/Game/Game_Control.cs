@@ -6,7 +6,7 @@ using System.IO;
 
 public class Game_Control : MonoBehaviour
 {
-    private static GameObject whoWinsTextShadow, player1MoveText, player2MoveText, Timer;
+    private static GameObject whoWinsTextShadow, player1MoveText, player2MoveText, Timer, soldiPlayer1, soldiPlayer2;
     private static GameObject player1, player2;
     public GameObject dice;
 
@@ -27,6 +27,8 @@ public class Game_Control : MonoBehaviour
         whoWinsTextShadow = GameObject.Find("WhoWinsText");
         player1MoveText = GameObject.Find("Player1MoveText");
         player2MoveText = GameObject.Find("Player2MoveText");
+        soldiPlayer1 = GameObject.Find("SoldiPlayer1");
+        soldiPlayer2 = GameObject.Find("SoldiPlayer2");
 
         player1 = GameObject.Find("Player1");
         player2 = GameObject.Find("Player2");
@@ -60,7 +62,7 @@ public class Game_Control : MonoBehaviour
         Debug.Log(Money_int_giocatore1);
         Debug.Log(Money_int_giocatore2);
 
-        StartCoroutine(StartCountdown());
+        StartCoroutine(StartCountdown());        
     }
 
 
@@ -84,6 +86,8 @@ public class Game_Control : MonoBehaviour
         float seconds = Mathf.FloorToInt(Time_int % 60);        
         Timer.GetComponent<Text>().text = string.Format("{0:00}:{1:00}", minutes, seconds);
 
+        soldiPlayer1.GetComponent<Text>().text = Convert.ToString(Money_int_giocatore1);
+        soldiPlayer2.GetComponent<Text>().text = Convert.ToString(Money_int_giocatore2);
 
         if (Money_int_giocatore1 <= 0)
         {
@@ -130,12 +134,20 @@ public class Game_Control : MonoBehaviour
         switch (playerToMove)
         {
             case 1:
-                player1.GetComponent<Follow_the_path>().Move();
-                gamestarted = true;
+                {
+                    player1.GetComponent<Follow_the_path>().Move();
+                    gamestarted = true;
+                    player1MoveText.gameObject.SetActive(false);
+                    player2MoveText.gameObject.SetActive(true);
+                }
                 break;
             case -1:
-                player2.GetComponent<Follow_the_path>().Move();
-                gamestarted = true;
+                {
+                    player2.GetComponent<Follow_the_path>().Move();
+                    gamestarted = true;                    
+                    player1MoveText.gameObject.SetActive(true);
+                    player2MoveText.gameObject.SetActive(false);
+                }
                 break;
         }
     }
