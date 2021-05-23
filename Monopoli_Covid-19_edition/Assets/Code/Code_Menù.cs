@@ -120,10 +120,10 @@ public class Code_Menù : MonoBehaviour
         Application.Quit();
         Debug.Log("OK sei uscito dal gioco");
 
-        string Time_file = Application.persistentDataPath + "/Time.txt";
-        string Money_file = Application.persistentDataPath + "/Money.txt";
+        string Time_file = Application.persistentDataPath + "/Time.txt"; //percorso file Time.txt
+        string Money_file = Application.persistentDataPath + "/Money.txt"; //percorso file Money.txt
 
-        if (File.Exists(Money_file))
+        if (File.Exists(Money_file)) //distruzione file se esistono
             File.Delete(Money_file);
 
         if (File.Exists(Time_file))

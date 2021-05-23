@@ -22,26 +22,26 @@ public class Valori : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        money.ClearOptions();
-        money.AddOptions(money_options);
+        money.ClearOptions(); //pulisco le opzioni del dropdown
+        money.AddOptions(money_options); //aggiungo le opzioni contenute nella lista
 
-        time.ClearOptions();
-        time.AddOptions(time_options);
+        time.ClearOptions(); //pulisco le opzioni del dropdown
+        time.AddOptions(time_options); //aggiungo le opzioni contenute nella lista
 
-        money_btm.SetActive(false);
-        time_btm.SetActive(false);
+        money_btm.SetActive(false); //bottone settato in false
+        time_btm.SetActive(false); //bottone settato in false
     }
 
     private void Update()
     {
-        timeString = time.value.ToString();
-        moneyString = money.value.ToString();
+        timeString = time.value.ToString(); //prendo il valore scelto dall'utente
+        moneyString = money.value.ToString(); //prendo il valore scelto dall'utente
 
-        if (moneyString == "1")
-            money_btm.SetActive(true);
+        if (moneyString == "1") //scelta 1
+            money_btm.SetActive(true); //bottone settato in true
 
-        if (timeString == "1")
-            time_btm.SetActive(true);
+        if (timeString == "1") //scelta 1
+            time_btm.SetActive(true); //bottone settato in true
     }
 
     // Update is called once per frame
@@ -59,10 +59,10 @@ public class Valori : MonoBehaviour
 
     private void choice_money()
     {
-        string Money_file = Application.persistentDataPath + "/Money.txt";
+        string Money_file = Application.persistentDataPath + "/Money.txt"; //percorso file Money.txt
         switch (moneyString)
         {
-            case "0":
+            case "0": //caso 0 scelto 1480 credito
                 {
                     money_1_int = 1480;
 
@@ -72,7 +72,7 @@ public class Valori : MonoBehaviour
                 }
                 break;
 
-            case "1":
+            case "1": //caso 1 viene preso il valore digitato dall'utente nell'inputfield
                 {
                     string money_input_string = "";
                     money_input_string = money_input.text;
@@ -82,7 +82,7 @@ public class Valori : MonoBehaviour
                     sw.Close();
 
                     bool success = Int32.TryParse(money_input_string, out money_1_int);
-                    if (!success)
+                    if (!success) //se la conversione non ha successo
                     {
                         Debug.Log("Conversione fallita.");
                     }
@@ -94,10 +94,10 @@ public class Valori : MonoBehaviour
 
     private void choice_time()
     {
-        string Time_file = Application.persistentDataPath + "/Time.txt";
+        string Time_file = Application.persistentDataPath + "/Time.txt"; //percorso file Time.txt
         switch (moneyString)
         {
-            case "0":
+            case "0": //caso 0 scelto 6000 secondi
                 {
                     time_1_int = 6000;
 
@@ -107,7 +107,7 @@ public class Valori : MonoBehaviour
                 }
                 break;
 
-            case "1":
+            case "1": //caso 1 viene preso il valore digitato dall'utente nell'inputfield
                 {
                     string time_input_string = "";
                     time_input_string = time_input.text;
@@ -117,7 +117,7 @@ public class Valori : MonoBehaviour
                     sw.Close();
 
                     bool success = Int32.TryParse(time_input_string, out time_1_int);
-                    if (!success)
+                    if (!success) //se la conversione non ha successo
                     {
                         Debug.Log("Conversione fallita.");
                     }

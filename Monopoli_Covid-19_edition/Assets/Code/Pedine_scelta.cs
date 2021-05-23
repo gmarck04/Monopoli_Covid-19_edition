@@ -5,9 +5,9 @@ public class Pedine_scelta : MonoBehaviour
 {
     void Start()
     {
-        string Pedina_file = Application.persistentDataPath + "/Pedina.txt";
+        string Pedina_file = Application.persistentDataPath + "/Pedina.txt"; //percorso file Pedina.txt
 
-        if (!File.Exists(Pedina_file))
+        if (!File.Exists(Pedina_file)) //creazione file se non esiste
         {
             Debug.Log("File delle pedine non trovato, ora lo creo");
             FileStream sw = File.Create(Pedina_file);
@@ -17,7 +17,7 @@ public class Pedine_scelta : MonoBehaviour
 
     }
 
-    public void Mascherina_pulsante()
+    public void Mascherina_pulsante() //scittura su file se scelto pulsante mascherina
     {
         string Pedina_file = Application.persistentDataPath + "/Pedina.txt";
         StreamWriter sw = new StreamWriter(Pedina_file);
@@ -25,7 +25,7 @@ public class Pedine_scelta : MonoBehaviour
         sw.Close();
     }
 
-    public void Siringa_pulsante()
+    public void Siringa_pulsante() //scittura su file se scelto pulsante siringa
     {
         string Pedina_file = Application.persistentDataPath + "/Pedina.txt";
         StreamWriter sw = new StreamWriter(Pedina_file);
@@ -33,7 +33,7 @@ public class Pedine_scelta : MonoBehaviour
         sw.Close();
     }
 
-    public void Vaccino_pulsante()
+    public void Vaccino_pulsante() //scittura su file se scelto pulsante vaccino
     {
         string Pedina_file = Application.persistentDataPath + "/Pedina.txt";
         StreamWriter sw = new StreamWriter(Pedina_file);
@@ -41,7 +41,7 @@ public class Pedine_scelta : MonoBehaviour
         sw.Close();
     }
 
-    public void Amuchina_pulsante()
+    public void Amuchina_pulsante() //scittura su file se scelto pulsante amucchina
     {
         string Pedina_file = Application.persistentDataPath + "/Pedina.txt";
         StreamWriter sw = new StreamWriter(Pedina_file);

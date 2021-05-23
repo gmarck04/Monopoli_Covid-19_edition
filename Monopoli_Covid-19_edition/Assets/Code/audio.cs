@@ -16,7 +16,7 @@ public class audio : MonoBehaviour
     {
         firstPlayInt = PlayerPrefs.GetInt(FirstPlay);
 
-        if (firstPlayInt == 0)
+        if (firstPlayInt == 0) //se il valore è uguale a 0
         {
             BackgroundFloat = .125f;
             soundEffectFloat = .75f;
@@ -26,27 +26,27 @@ public class audio : MonoBehaviour
             PlayerPrefs.SetFloat(SoundsEffectsPref, soundEffectFloat);
             PlayerPrefs.SetInt(FirstPlay, -1);
         }
-        else
+        else //valore è un diverso da 0
         {
-            BackgroundFloat = PlayerPrefs.GetFloat(BackgroundsPref);
+            BackgroundFloat = PlayerPrefs.GetFloat(BackgroundsPref); //prende valore da BackgroundsPref
             BackgroundSlider.value = BackgroundFloat;
-            soundEffectFloat = PlayerPrefs.GetFloat(SoundsEffectsPref);
+            soundEffectFloat = PlayerPrefs.GetFloat(SoundsEffectsPref); //prende valore da SoundsEffectsPref
             soundEffectSlider.value = soundEffectFloat;
         }
     }
-    public void SavesoundsSettings()
+    public void SavesoundsSettings() //salvataggio impostazioni audio
     {
         PlayerPrefs.SetFloat(BackgroundsPref, BackgroundSlider.value);
         PlayerPrefs.SetFloat(SoundsEffectsPref, soundEffectSlider.value);
     }
     void OnApplicationFocus(bool infocus)
     {
-        if(!infocus)
+        if(!infocus) //se infocus è false
         {
             SavesoundsSettings();
         }
     }
-    public void UpdateSound()
+    public void UpdateSound() //aggiorna i valori delle impostazioni audio
     {
         backgroundAudio.volume = BackgroundSlider.value;
 

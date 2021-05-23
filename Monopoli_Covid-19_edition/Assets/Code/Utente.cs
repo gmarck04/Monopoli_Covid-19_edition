@@ -15,9 +15,9 @@ public class Utente : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string Login_file = Application.persistentDataPath + "/Login.txt";
+        string Login_file = Application.persistentDataPath + "/Login.txt"; //percorso file Login
 
-        if (!File.Exists(Login_file))
+        if (!File.Exists(Login_file)) //creazione file se non esiste
         {
             Debug.Log("File delle password non trovato, ora lo creo");
             FileStream sw = File.Create(Login_file);
@@ -33,7 +33,7 @@ public class Utente : MonoBehaviour
 
     //}
 
-    static string Encrypt(string value)
+    static string Encrypt(string value) //funzione cripta
     {        
         using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
         {
@@ -48,7 +48,7 @@ public class Utente : MonoBehaviour
         string[] elenco_giocatori = new string[0];
         string[] User_Lettura = new string[0];
         string[] Password_Lettura = new string[0];
-        string Login_file = Application.persistentDataPath + "/Login.txt";
+        string Login_file = Application.persistentDataPath + "/Login.txt"; //percorso file Login
         int Errori = 0;
 
         
@@ -72,26 +72,26 @@ public class Utente : MonoBehaviour
                 User_Lettura[i] = $"{subs[0]}";
                 Password_Lettura[i] = $"{subs[1]}";
 
-                if (User_Lettura[i] == User.text && Password_Lettura[i] == Encrypt(Password.text))
+                if (User_Lettura[i] == User.text && Password_Lettura[i] == Encrypt(Password.text)) //caso esntrata
                 {
                     Debug.Log("Ok sei entrato");
                     SceneManager.LoadScene(5);
                     Messaggio.SetActive(false);
                 }
-                else if (User_Lettura[i] != User.text || Password_Lettura[i] != Password.text)
+                else if (User_Lettura[i] != User.text || Password_Lettura[i] != Password.text) //caso errore
                 {
                     Errori++;
                 }
             }
             sw.Close();
-            if (Errori == elenco_giocatori.Length)
+            if (Errori == elenco_giocatori.Length) //mostro messaggio errore
             {
                 Debug.Log("Utente e pass sono sbagliati");
                 Messaggio.SetActive(true);
                 Password.text = "";
             }
         }
-        else
+        else //creazione file se non esiste
         {
             Debug.Log("File non trovato, ora lo creo");
             FileStream sw = File.Create(Login_file);
@@ -102,7 +102,7 @@ public class Utente : MonoBehaviour
     
     public void Register()
     {
-        string Login_file = Application.persistentDataPath + "/Login.txt";
+        string Login_file = Application.persistentDataPath + "/Login.txt"; //percorso file Login
 
         if (File.Exists(Login_file))
         {
@@ -111,7 +111,7 @@ public class Utente : MonoBehaviour
             sw.Close();
             SceneManager.LoadScene(5);
         }
-        else
+        else //creazione file se non esiste
         {
             Debug.Log("File non trovato, ora lo creo");
             FileStream sw = File.Create(Login_file);

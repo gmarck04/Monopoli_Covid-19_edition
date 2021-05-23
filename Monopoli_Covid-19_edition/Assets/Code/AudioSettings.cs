@@ -10,7 +10,7 @@ public class AudioSettings : MonoBehaviour
 
     void Awake()
     {
-        ContinueSettings();
+        ContinueSettings(); //richiamo funzione ContinueSettings, che setta le impostazioni audio
     }
 
     private void ContinueSettings()

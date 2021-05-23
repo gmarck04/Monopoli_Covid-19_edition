@@ -16,7 +16,7 @@ public class Change_Input : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab) && Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.Tab) && Input.GetKey(KeyCode.LeftShift)) //torno indietro nell'ordine dei tasti
         {
             Selectable previous = system.currentSelectedGameObject.GetComponent<Selectable>().FindSelectableOnUp();
             if (previous != null)
@@ -24,7 +24,7 @@ public class Change_Input : MonoBehaviour
                 previous.Select();
             }
         }
-        else if (Input.GetKeyDown(KeyCode.Tab))
+        else if (Input.GetKeyDown(KeyCode.Tab)) //vado avanti nell'ordine dei tasti
         {
             Selectable next = system.currentSelectedGameObject.GetComponent<Selectable>().FindSelectableOnDown();
             if (next != null)

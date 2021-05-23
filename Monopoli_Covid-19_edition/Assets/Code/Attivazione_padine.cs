@@ -11,10 +11,10 @@ public class Attivazione_padine : MonoBehaviour
 
     void Start()
     {
-        string Login_file = Application.persistentDataPath + "/Pedina.txt";
-        var data = File.ReadAllLines(Login_file);
+        string Login_file = Application.persistentDataPath + "/Pedina.txt"; //percorso file Pedina.txt
+        var data = File.ReadAllLines(Login_file); //lettura file
         Debug.Log(data.ToArray()[0]);
-        switch (data.ToArray()[0])
+        switch (data.ToArray()[0]) //impostazione pedine stato
         {
             case "Mascherina":
                 {
