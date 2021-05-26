@@ -75,7 +75,7 @@ public class Utente : MonoBehaviour
                 if (User_Lettura[i] == User.text && Password_Lettura[i] == Encrypt(Password.text)) //caso esntrata
                 {
                     Debug.Log("Ok sei entrato");
-                    SceneManager.LoadScene(5);
+                    //SceneManager.LoadScene(5);
                     Messaggio.SetActive(false);
                 }
                 else if (User_Lettura[i] != User.text || Password_Lettura[i] != Password.text) //caso errore
@@ -109,7 +109,7 @@ public class Utente : MonoBehaviour
             StreamWriter sw = new StreamWriter(Login_file, false);
             sw.WriteLine(User.text + "," + Encrypt(Password.text));
             sw.Close();
-            SceneManager.LoadScene(5);
+            //SceneManager.LoadScene(5);
         }
         else //creazione file se non esiste
         {
