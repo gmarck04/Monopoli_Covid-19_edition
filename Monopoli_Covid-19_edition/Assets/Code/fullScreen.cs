@@ -27,7 +27,7 @@ public class fullScreen : MonoBehaviour
         switch (screenString)
         {
             case "0":
-                {
+                {                    
                     Screen.fullScreen = Screen.fullScreen; //fullScreen
                 }
                 break;

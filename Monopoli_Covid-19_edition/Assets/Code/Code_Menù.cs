@@ -86,10 +86,10 @@ public class Code_Menù : MonoBehaviour
     {
         Back_int++;
         Login--;
-        if (Login == 0)
-        {
-            SceneManager.LoadScene(5);
-        }
+        //if (Login == 0)
+        //{
+        //    SceneManager.LoadScene(5);
+        //}
     }
     public void Mascherina()
     {

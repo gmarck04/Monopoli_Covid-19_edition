@@ -59,6 +59,9 @@ public class Utente : MonoBehaviour
             //FileStream sw = new FileStream(Login_file);
             StreamReader sw = new StreamReader(Login_file);
             var data = File.ReadAllLines(Login_file); //memorizzo in data tutti le righe
+            
+            
+            Debug.Log(data);
 
             Array.Resize(ref elenco_giocatori, elenco_giocatori.Length + data.ToArray().Length);
             Array.Resize(ref User_Lettura, User_Lettura.Length + data.ToArray().Length);
@@ -68,6 +71,7 @@ public class Utente : MonoBehaviour
             for (int i = 0; i < data.ToArray().Length; i++)
             {
                 elenco_giocatori[i] = data.ToArray()[i];
+                Debug.Log(data.ToArray()[i]);
                 string[] subs = elenco_giocatori[i].Split(',');
                 User_Lettura[i] = $"{subs[0]}";
                 Password_Lettura[i] = $"{subs[1]}";
@@ -75,7 +79,7 @@ public class Utente : MonoBehaviour
                 if (User_Lettura[i] == User.text && Password_Lettura[i] == Encrypt(Password.text)) //caso esntrata
                 {
                     Debug.Log("Ok sei entrato");
-                    //SceneManager.LoadScene(5);
+                    SceneManager.LoadScene(5);
                     Messaggio.SetActive(false);
                 }
                 else if (User_Lettura[i] != User.text || Password_Lettura[i] != Password.text) //caso errore
@@ -106,10 +110,10 @@ public class Utente : MonoBehaviour
 
         if (File.Exists(Login_file))
         {
-            StreamWriter sw = new StreamWriter(Login_file, false);
+            StreamWriter sw = new StreamWriter(Login_file, true);
             sw.WriteLine(User.text + "," + Encrypt(Password.text));
             sw.Close();
-            //SceneManager.LoadScene(5);
+            SceneManager.LoadScene(5);
         }
         else //creazione file se non esiste
         {
