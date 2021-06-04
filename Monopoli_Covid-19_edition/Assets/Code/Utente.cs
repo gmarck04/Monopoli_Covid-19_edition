@@ -95,13 +95,6 @@ public class Utente : MonoBehaviour
                 Password.text = "";
             }
         }
-        else //creazione file se non esiste
-        {
-            Debug.Log("File non trovato, ora lo creo");
-            FileStream sw = File.Create(Login_file);
-            sw.Close();
-            Debug.Log("Creato il file delle password");
-        }
     }
     
     public void Register()
@@ -114,14 +107,7 @@ public class Utente : MonoBehaviour
             sw.WriteLine(User.text + "," + Encrypt(Password.text));
             sw.Close();
             SceneManager.LoadScene(5);
-        }
-        else //creazione file se non esiste
-        {
-            Debug.Log("File non trovato, ora lo creo");
-            FileStream sw = File.Create(Login_file);
-            sw.Close();
-            Debug.Log("Creato il file delle password");
-        }
+        }        
     }
 
     /*public void pulisci()
