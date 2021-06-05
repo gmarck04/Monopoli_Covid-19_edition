@@ -6,13 +6,14 @@ public class Dice : MonoBehaviour
     private SpriteRenderer rend;
     private int whosTurn;
     public int numberExtracted;
+    public int number;
     public Animator animator;
     public bool allowed = true; //variabile per ruotare dado
 
     // Start is called before the first frame update
     void Start()
     {
-        int i = Random.Range(0, 1); //scelta turno
+        int i = Random.Range(0, 2); //scelta turno
         switch (i)
         {
             case 0:
@@ -35,5 +36,6 @@ public class Dice : MonoBehaviour
             Game_Control.MovePlayer(whosTurn);
             whosTurn *= -1; 
         }
+        number = Random.Range(1, 6);
     }
 }

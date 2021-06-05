@@ -7,7 +7,7 @@ using System.IO;
 public class Game_Control : MonoBehaviour
 {
     private static GameObject whoWinsTextShadow, player1MoveText, player2MoveText, Timer, soldiPlayer1, soldiPlayer2; //inizializzo i GameObject
-    private static GameObject player1, player2;
+    private static GameObject player1, player2, searchplayer;
     public GameObject dice; //prendo il GameObject dice da Dice (elemento)
     private int Money_int_giocatore1 = 1480;
     private int Money_int_giocatore2 = 1480;
@@ -30,9 +30,11 @@ public class Game_Control : MonoBehaviour
         soldiPlayer2 = GameObject.Find("SoldiPlayer2"); //cerco l'elemento SoldiPlayer2 e lo inserisco nel GameObject soldiPlayer2
         player1 = GameObject.Find("Player1"); // cerco l'elemento Player1 e lo inserisco nel GameObject player1
         player2 = GameObject.Find("Player2"); //cerco l'elemento Player2 e lo inserisco nel GameObject player2
+        searchplayer = GameObject.Find("SearchPlayer"); //cerco l'elemento SearchPlayer e lo inserisco nel GameObject searchplayer
 
         player1.GetComponent<Follow_the_path>().Move(); //chiamo la funzione move dal codice Follow_the_path
         player2.GetComponent<Follow_the_path>().Move();
+        searchplayer.GetComponent<Follow_the_path>().Move();
 
         whoWinsTextShadow.gameObject.SetActive(false); //imposto false
         player1MoveText.gameObject.SetActive(true); //imposto true
@@ -144,6 +146,11 @@ public class Game_Control : MonoBehaviour
                     player2.GetComponent<Follow_the_path>().Move();
                     gamestarted = true; //gioco inizia                     
                     player1MoveText.gameObject.SetActive(true); //attivazione frase your turn (1)
+                    player2MoveText.gameObject.SetActive(false); //disattivazione frase your turn (2)
+
+                    searchplayer.GetComponent<Follow_the_path>().MoveSearch();
+                    gamestarted = true; //gioco inizia
+                    player1MoveText.gameObject.SetActive(false); //disattivazione frase your turn (1)
                     player2MoveText.gameObject.SetActive(false); //disattivazione frase your turn (2)
                 }
                 break;

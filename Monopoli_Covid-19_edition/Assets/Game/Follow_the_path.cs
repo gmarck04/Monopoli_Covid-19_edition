@@ -25,4 +25,14 @@ public class Follow_the_path : MonoBehaviour
         gameObject.transform.position = waypoints[waypointIndex].position; //cambio posizione x e y
         gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, 6f); //rendo predefinita la posizione z pari a 6
     }
+    public void MoveSearch()
+    {
+        waypointIndex += dice.GetComponent<Dice>().number; //rendo la variabile waypointindex uguale al suo valore iniziale aumentato del valore uscito dal dado
+        if (waypointIndex >= waypoints.Length)
+        {
+            waypointIndex = waypointIndex - waypoints.Length;
+        }
+        gameObject.transform.position = waypoints[waypointIndex].position; //cambio posizione x e y
+        gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, 6f); //rendo predefinita la posizione z pari a 6
+    }
 }
