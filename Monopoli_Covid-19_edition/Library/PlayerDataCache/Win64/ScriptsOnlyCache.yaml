@@ -16,7 +16,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -104,6 +103,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3112}
     - Class: 114
       Script: {instanceID: 3186}
+    - Class: 114
+      Script: {instanceID: 16746}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -327,7 +328,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3186}
     - Class: 114
-      Script: {instanceID: 16502}
+      Script: {instanceID: 17078}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -382,7 +383,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3186}
     - Class: 114
-      Script: {instanceID: 16502}
+      Script: {instanceID: 17078}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -569,7 +570,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4160}
     - Class: 114
-      Script: {instanceID: 16502}
+      Script: {instanceID: 17078}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -866,7 +867,7 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: de25a568f284cad306df2c6a7543f7d3
+      Hash: c958ee45b2898411c01b4299aa172ded
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Dice
@@ -1236,4 +1237,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Gioco_Exit.unity
   - Assets/Scenes/Guida.unity
   - Assets/Scenes/Scelta Personaggi.unity
-  playerPath: C:/Users/gmarc/Desktop/Monopoli Alpha v1.1.4/Monopoli_Covid-19_edition.exe
+  playerPath: C:/Users/gmarc/Desktop/Monopoli Alpha v1.1.5/Monopoli_Covid-19_edition.exe

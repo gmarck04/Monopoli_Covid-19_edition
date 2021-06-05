@@ -149,9 +149,6 @@ public class Game_Control : MonoBehaviour
                     player2MoveText.gameObject.SetActive(false); //disattivazione frase your turn (2)
 
                     searchplayer.GetComponent<Follow_the_path>().MoveSearch();
-                    gamestarted = true; //gioco inizia
-                    player1MoveText.gameObject.SetActive(false); //disattivazione frase your turn (1)
-                    player2MoveText.gameObject.SetActive(false); //disattivazione frase your turn (2)
                 }
                 break;
         }
